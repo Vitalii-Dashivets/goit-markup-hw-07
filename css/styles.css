@@ -86,10 +86,24 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
+@media screen and (min-width: 768px) {
+  .header-section {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-section {
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    align-items: flex-start;
+  }
+}
 .logo-web {
   color: var(--iris);
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -97,6 +111,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 0;
 }
 
 .logo-studio {
@@ -138,8 +153,13 @@ img {
   border-radius: 2px;
   background-color: var(--iris);
   position: absolute;
-  bottom: -27px;
+  bottom: -25px;
   left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .site-nav .link.current::after {
+    bottom: -31px;
+  }
 }
 
 .contacts {
@@ -154,6 +174,20 @@ img {
 .contacts:hover,
 .contacts:focus {
   color: var(--iris);
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-bottom: 0px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 .nav-container {
   display: flex;
@@ -193,13 +227,33 @@ img {
   margin-right: 0px;
   flex-basis: auto;
 }
+@media screen and (min-width: 768px) {
+  .mail-container {
+    font-size: 12px;
+    line-height: 1.33;
+    margin-right: 40px;
+    margin-bottom: 4px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .mail-container {
     margin-right: 40px;
+    margin-bottom: 0px;
   }
 }
 .tel-container {
   flex-basis: auto;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .tel-container {
+    flex-basis: auto;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.33;
+  }
 }
 
 /*------------------Hero--------------------------*/
